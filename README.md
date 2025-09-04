@@ -100,8 +100,8 @@ src/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/your-org/Reasy.git
-cd Reasy
+git clone https://github.com/CastilloLabs/reasy-soft.git
+cd reasy-soft
 
 # Copiar variables de entorno
 cp .env.example .env
@@ -127,8 +127,8 @@ docker-compose exec app npm run build
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/your-org/Reasy.git
-cd Reasy
+git clone https://github.com/CastilloLabs/reasy-soft.git
+cd reasy-soft
 
 # Instalar dependencias PHP
 composer install
@@ -144,7 +144,7 @@ php artisan key:generate
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=Reasy
+DB_DATABASE=reasy_central
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 
@@ -181,7 +181,7 @@ La aplicación estará disponible en: `http://localhost:8000`
 ### Para Desarrolladores
 
 - [💻 **Contribuir**](CONTRIBUTING.md)
-- [🐛 **Reportar Issues**](https://github.com/your-org/Reasy/issues)
+- [🐛 **Reportar Issues**](https://github.com/CastilloLabs/reasy-soft/issues)
 - [🔧 **Development Setup**](docs/development-setup.md)
 
 ---
@@ -200,7 +200,7 @@ Reasy implementa las mejores prácticas de seguridad:
 
 ### Reportar Vulnerabilidades
 
-Para reportar vulnerabilidades de seguridad, por favor envía un email a: `security@Reasy.com`
+Para reportar vulnerabilidades de seguridad, por favor envía un email a: `security@reasy.com`
 
 ---
 
@@ -224,10 +224,10 @@ php artisan test tests/Unit/
 ```
 
 ### Métricas de Testing
-- **Coverage**: >90%
-- **Unit Tests**: 500+
-- **Feature Tests**: 200+
-- **Integration Tests**: 100+
+- **Coverage**: En desarrollo
+- **Unit Tests**: En construcción
+- **Feature Tests**: En construcción
+- **Integration Tests**: Planificados
 
 ---
 
@@ -235,10 +235,10 @@ php artisan test tests/Unit/
 
 ### Métricas de Performance
 
-- **Response Time**: <300ms (p95)
-- **Throughput**: 1000+ reservas concurrentes
-- **Availability**: 99.9% SLA
-- **Database Queries**: Optimizadas con índices
+- **Response Time**: Objetivo <300ms (p95)
+- **Throughput**: Objetivo 1000+ reservas concurrentes
+- **Availability**: Objetivo 99.9% SLA
+- **Database Queries**: Optimización en progreso
 
 ### Optimizaciones Implementadas
 
@@ -264,30 +264,30 @@ Reasy soporta múltiples idiomas y regiones:
 
 - Múltiples zonas horarias
 - Formatos de fecha/hora localizados
-- Múltiples monedas
-- Plantillas de notificación multi-idioma
+- Múltiples monedas (planificado)
+- Plantillas de notificación multi-idioma (planificado)
 
 ---
 
-## 🔌 Integraciones
+### Integraciones Planificadas
 
-### Proveedores de Pago
-- **Stripe** (Recomendado)
+### Proveedores de Pago (En desarrollo)
+- **Stripe** (Prioridad alta)
 - **PayPal**
 - **Adyen**
 - **Square**
 
-### Comunicaciones
+### Comunicaciones (En desarrollo)
 - **Twilio** (SMS)
 - **SendGrid** (Email)
 - **WhatsApp Business API**
 
-### Calendarios
+### Calendarios (Futuro)
 - **Google Calendar**
 - **Microsoft Outlook**
 - **Apple Calendar** (CalDAV)
 
-### Contabilidad
+### Contabilidad (Futuro)
 - **QuickBooks**
 - **Xero**
 - **FreshBooks**
@@ -299,7 +299,8 @@ Reasy soporta múltiples idiomas y regiones:
 ### Q4 2025
 - [x] MVP Core Features
 - [x] Multi-tenant Architecture  
-- [x] Payment Integration
+- [x] Landing Pages
+- [ ] Payment Integration
 - [ ] Mobile Apps (iOS/Android)
 - [ ] Advanced Analytics
 
@@ -333,8 +334,8 @@ Reasy soporta múltiples idiomas y regiones:
 
 ```bash
 # Setup del entorno de desarrollo
-git clone https://github.com/your-org/Reasy.git
-cd Reasy
+git clone https://github.com/CastilloLabs/reasy-soft.git
+cd reasy-soft
 composer install
 npm install
 cp .env.example .env
@@ -352,17 +353,17 @@ php artisan test
 ## 📞 Soporte
 
 ### Community Support
-- [💬 **Discord Community**](https://discord.gg/Reasy)
-- [📚 **Documentation**](https://docs.Reasy.com)
-- [❓ **Stack Overflow**](https://stackoverflow.com/questions/tagged/Reasy) - Tag: `Reasy`
+- [💬 **Discord Community**](https://discord.gg/reasy)
+- [📚 **Documentation**](https://docs.reasy.com)
+- [❓ **Stack Overflow**](https://stackoverflow.com/questions/tagged/reasy) - Tag: `reasy`
 
 ### Enterprise Support
-- 📧 **Email**: support@Reasy.com
-- 📞 **Phone**: +1-800-RESERVE
-- 🎫 **Support Portal**: https://support.Reasy.com
+- 📧 **Email**: support@reasy.com
+- 📞 **Phone**: +34 900 123 456
+- 🎫 **Support Portal**: https://support.reasy.com
 
 ### Status Page
-Revisa el estado de nuestros servicios: https://status.Reasy.com
+Revisa el estado de nuestros servicios: https://status.reasy.com
 
 ---
 
@@ -386,23 +387,23 @@ Reasy fue inspirado por y agradece a:
 
 ## 📊 Estadísticas del Proyecto
 
-![GitHub stars](https://img.shields.io/github/stars/your-org/Reasy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-org/Reasy?style=social)
-![GitHub issues](https://img.shields.io/github/issues/your-org/Reasy)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/your-org/Reasy)
+![GitHub stars](https://img.shields.io/github/stars/CastilloLabs/reasy-soft?style=social)
+![GitHub forks](https://img.shields.io/github/forks/CastilloLabs/reasy-soft?style=social)
+![GitHub issues](https://img.shields.io/github/issues/CastilloLabs/reasy-soft)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/CastilloLabs/reasy-soft)
 
 ### Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=your-org/Reasy)](https://github.com/your-org/Reasy/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=CastilloLabs/reasy-soft)](https://github.com/CastilloLabs/reasy-soft/graphs/contributors)
 
 ---
 
 <div align="center">
 
-**[⬆ Volver arriba](#Reasy-)**
+**[⬆ Volver arriba](#reasy-)**
 
 Hecho con ❤️ por el equipo de Reasy
 
-[Website](https://Reasy.com) • [Documentation](https://docs.Reasy.com) • [Community](https://discord.gg/Reasy) • [Support](mailto:support@Reasy.com)
+[Website](https://reasy.com) • [Documentation](https://docs.reasy.com) • [Community](https://discord.gg/reasy) • [Support](mailto:support@reasy.com)
 
 </div>
