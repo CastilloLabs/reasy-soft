@@ -29,26 +29,26 @@
                 <div class="flex items-center">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <a href="{{ route('public.home') }}" class="text-2xl font-bold text-indigo-600">
+                        <a href="{{ route('landing.home') }}" class="text-2xl font-bold text-indigo-600">
                             Reasy
                         </a>
                     </div>
 
                     <!-- Navigation Links -->
                     <div class="hidden md:ml-10 md:flex space-x-8">
-                        <a href="{{ route('public.features') }}"
+                        <a href="{{ route('landing.features') }}"
                             class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                             Características
                         </a>
-                        <a href="{{ route('public.pricing') }}"
+                        <a href="{{ route('landing.pricing') }}"
                             class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                             Precios
                         </a>
-                        <a href="{{ route('public.about') }}"
+                        <a href="{{ route('landing.about') }}"
                             class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                             Sobre Nosotros
                         </a>
-                        <a href="{{ route('public.contact') }}"
+                        <a href="{{ route('landing.contact') }}"
                             class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                             Contacto
                         </a>
@@ -60,7 +60,7 @@
                     <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                         Iniciar Sesión
                     </a>
-                    <a href="{{ route('public.signup') }}"
+                    <a href="{{ route('landing.signup') }}"
                         class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">
                         Prueba Gratuita
                     </a>
@@ -102,9 +102,9 @@
                 <div>
                     <h4 class="text-sm font-semibold text-gray-900 mb-4">Producto</h4>
                     <ul class="space-y-2">
-                        <li><a href="{{ route('public.features') }}"
+                        <li><a href="{{ route('landing.features') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Características</a></li>
-                        <li><a href="{{ route('public.pricing') }}"
+                        <li><a href="{{ route('landing.pricing') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Precios</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 text-sm">Integraciones</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 text-sm">API</a></li>
@@ -115,9 +115,9 @@
                 <div>
                     <h4 class="text-sm font-semibold text-gray-900 mb-4">Empresa</h4>
                     <ul class="space-y-2">
-                        <li><a href="{{ route('public.about') }}"
+                        <li><a href="{{ route('landing.about') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Sobre Nosotros</a></li>
-                        <li><a href="{{ route('public.contact') }}"
+                        <li><a href="{{ route('landing.contact') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Contacto</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 text-sm">Blog</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 text-sm">Carreras</a></li>
@@ -128,9 +128,9 @@
                 <div>
                     <h4 class="text-sm font-semibold text-gray-900 mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="{{ route('public.privacy') }}"
+                        <li><a href="{{ route('landing.privacy') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Privacidad</a></li>
-                        <li><a href="{{ route('public.terms') }}"
+                        <li><a href="{{ route('landing.terms') }}"
                                 class="text-gray-600 hover:text-gray-900 text-sm">Términos</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 text-sm">Cookies</a></li>
                     </ul>
