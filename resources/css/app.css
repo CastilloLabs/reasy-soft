@@ -1,4 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+/* Preline UI */
+@import "../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+/* Plugins */
+/* @plugin "@tailwindcss/forms"; */
+
 @import '../../vendor/livewire/flux/dist/flux.css';
 
 @source '../views';
