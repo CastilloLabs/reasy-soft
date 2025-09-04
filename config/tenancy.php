@@ -17,9 +17,13 @@ return [
      * Only relevant if you're using the domain or subdomain identification middleware.
      */
     'central_domains' => [
-        env('CENTRAL_DOMAIN', 'admin.reasy.test'),
+        // Admin subdomain for platform administration
+        env('ADMIN_DOMAIN', 'admin.reasy.test'),
         'admin.localhost:8000',
         'admin.localhost',
+
+        // Main domain for public landing page
+        env('APP_DOMAIN', 'reasy.test'),
         'localhost:8000',
         '127.0.0.1:8000',
         'localhost',

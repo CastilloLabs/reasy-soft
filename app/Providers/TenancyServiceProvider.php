@@ -115,23 +115,38 @@ class TenancyServiceProvider extends ServiceProvider {
 
     protected function mapRoutes() {
         $this->app->booted(function () {
-            // Central routes (platform administration)
             $centralDomains = config('tenancy.central_domains');
+            $mainDomain = env('APP_DOMAIN', 'reasy.test');
+            $adminDomain = env('ADMIN_DOMAIN', 'admin.reasy.test');
 
-            foreach ($centralDomains as $domain) {
+            // Public landing routes (main domain)
+            Route::domain($mainDomain)
+                ->namespace(static::$controllerNamespace)
+                ->group(base_path('routes/public.php'));
+
+            // Development domains for public routes
+            $publicDomains = ['localhost:8000', '127.0.0.1:8000', 'localhost', '127.0.0.1'];
+            foreach ($publicDomains as $domain) {
+                Route::domain($domain)
+                    ->namespace(static::$controllerNamespace)
+                    ->group(base_path('routes/public.php'));
+            }
+
+            // Admin routes (admin subdomain)
+            $adminDomains = [$adminDomain, 'admin.localhost:8000', 'admin.localhost'];
+            foreach ($adminDomains as $domain) {
                 Route::domain($domain)
                     ->namespace(static::$controllerNamespace)
                     ->group(base_path('routes/central.php'));
             }
 
-            // Tenant routes (individual business applications)
+            // Tenant routes (any other subdomain)
             if (file_exists(base_path('routes/tenant.php'))) {
                 Route::namespace(static::$controllerNamespace)
                     ->group(base_path('routes/tenant.php'));
             }
         });
     }
-
     protected function makeTenancyMiddlewareHighestPriority() {
         $tenancyMiddleware = [
             // Even higher priority than the initialization middleware
