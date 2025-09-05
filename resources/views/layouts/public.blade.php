@@ -144,6 +144,10 @@
             </div>
         </div>
     </footer>
+
+    {{-- section scripts --}}
+    @yield('scripts')
+    {{-- endsection scripts --}}
 </body>
 
 </html>

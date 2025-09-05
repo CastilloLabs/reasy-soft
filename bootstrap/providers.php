@@ -3,5 +3,6 @@
 return [
     App\Providers\AppServiceProvider::class,
     App\Providers\VoltServiceProvider::class,
-    App\Providers\TenancyServiceProvider::class, // <-- here
+    App\Providers\TenancyServiceProvider::class,
+    TenantManagement\Infrastructure\Providers\TenantManagementServiceProvider::class,
 ];

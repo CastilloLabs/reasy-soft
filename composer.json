@@ -29,7 +29,17 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "TenantManagement\\": "src/TenantManagement/",
+            "BusinessManagement\\": "src/BusinessManagement/",
+            "ScheduleManagement\\": "src/ScheduleManagement/",
+            "BookingManagement\\": "src/BookingManagement/",
+            "CustomerManagement\\": "src/CustomerManagement/",
+            "PaymentManagement\\": "src/PaymentManagement/",
+            "NotificationManagement\\": "src/NotificationManagement/",
+            "ReportingManagement\\": "src/ReportingManagement/",
+            "ComplianceManagement\\": "src/ComplianceManagement/",
+            "IntegrationManagement\\": "src/IntegrationManagement/"
         }
     },
     "autoload-dev": {

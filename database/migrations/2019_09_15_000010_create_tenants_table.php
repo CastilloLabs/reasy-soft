@@ -16,15 +16,29 @@ class CreateTenantsTable extends Migration {
         Schema::create('tenants', function (Blueprint $table) {
             $table->uuid('id')->primary();
 
-            // Custom columns for Reasy
-            $table->string('name');
+            // Business Information
+            $table->string('business_name');
+            $table->string('business_type');
+            $table->string('subdomain')->unique();
+
+            // Tenant Status & Lifecycle
+            $table->string('status')->default('pending_verification'); // pending_verification, active, suspended, cancelled
+            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('trial_ends_at')->nullable();
+            $table->string('suspension_reason')->nullable();
+
+            // Subscription & Limits (for future use)
             $table->string('plan_id')->default('starter');
-            $table->string('status')->default('active'); // active, suspended, cancelled
-            $table->json('settings')->nullable();
             $table->json('limits')->nullable();
+            $table->json('settings')->nullable();
 
             $table->timestamps();
             $table->json('data')->nullable(); // Stancl default data column
+
+            // Indexes
+            $table->index(['status']);
+            $table->index(['subdomain']);
+            $table->index(['trial_ends_at']);
         });
     }
 
